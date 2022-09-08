@@ -142,4 +142,23 @@ You can test renewal command in ```dry-run``` mode
 ```bash
 sudo certbot renew --dry-run
 ```
+
 ![http](./images/26.png)
+
+Best pracice is to have a scheduled job to run renew command periodically. Let us configure a ```cronjob``` to run the command twice a day.
+
+To do so, lets edit the crontab file with the following command and select the edit mode
+
+```bash
+crontab -e
+```
+
+![http](./images/27.png)
+
+Paste the following line of code - ```this code will run automatically every 12 hours``
+
+```bash
+* 12 * * *   root /usr/bin/certbot renew > /dev/null 2>&1
+```
+
+![http](./images/28.png)
