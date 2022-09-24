@@ -90,7 +90,7 @@ Now connect/point the publicly registered domain name nameservers to the ROUTE 5
 To this, copy all the NS records from ROUTE 53 to the registered domain nameserver record and click on change nameservers.
 ![Elastic IP](./images/17.png)
 
-Now we can create a *```A record```* for ( oyanda.tk and www.oayanda.yk ). In the ```Hosted zone details``` page, click on *```Create record```*.
+Now we can create a *```A record```* for ( oyanda.tk and www.oayanda.tk ). In the ```Hosted zone details``` page, click on *```Create record```*.
 Make sure ```Record type``` is ```A``` and the ```Elastic IP``` as the ```Value``` and click *```create record```*.
 ![Elastic IP](./images/18.png)
 Additionally, create a ```A record``` with the ```www``` prefix.
